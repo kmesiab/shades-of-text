@@ -19,6 +19,11 @@ creating a dynamic and engaging user experience.
 - **Log Output**: The application logs the sentiment scores and corresponding
 sentences for user reference and debugging.
 
+## Dependency
+
+This application requires the py-score-emote python script, available here:
+[VADER Sentiment Analysis](https://github.com/kmesiab/py-score-emote):
+
 ## Installation
 1. Clone the repository:
    ```
@@ -44,7 +49,9 @@ sentences for user reference and debugging.
 ## Dependencies
 - Fyne: A user interface toolkit for Go.
 - Python 3: For running the sentiment analysis script.
-- VADER Sentiment Analysis: Python script for sentiment analysis.
+- [VADER Sentiment Analysis](https://github.com/kmesiab/py-score-emote):
+  Python script for sentiment analysis.
+
 
 ## Contributing
 Contributions to Shades of Text are welcome. Please fork the repository, make
