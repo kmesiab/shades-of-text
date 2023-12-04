@@ -8,6 +8,7 @@ import (
 	"path/filepath"
 
 	"fyne.io/fyne/v2/app"
+	"fyne.io/fyne/v2/theme"
 	"fyne.io/fyne/v2/widget"
 
 	"github.com/kmesiab/shades-of-text/ui"
@@ -16,6 +17,8 @@ import (
 func main() {
 	application := app.New()
 	window, appWindow := ui.Initialize(application)
+
+	application.Settings().SetTheme(theme.DarkTheme())
 
 	appWindow.InputBox.OnChanged = func(text string) {
 		processed, err := processInputString(text)
